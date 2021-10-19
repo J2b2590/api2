@@ -1,11 +1,46 @@
 {
   "post": [
-    { "id": 1, "author": "Jeff1", "body": "This is content for the body" },
-    { "id": 2, "author": "jeff2", "body": "This is content for the body" },
-    { "id": 3, "author": "Jeff3", "body": "This is content for the body" },
-    { "id": 4, "author": "Jeff4", "body": "This is content for the body" },
-    { "id": 5, "author": "Jeff5", "body": "This is content for the body" },
-    { "id": 6, "author": "Jeff6", "body": "This is content for the body" },
-    { "id": 7, "author": "Jeff7", "body": "This is content for the body" }
+    {
+      "id": 1,
+      "author": "Jeff1",
+      "body": "This is content for the body",
+      "likes": 12
+    },
+    {
+      "id": 2,
+      "author": "jeff2",
+      "body": "This is content for the body",
+      "likes": 1
+    },
+    {
+      "id": 3,
+      "author": "Jeff3",
+      "body": "This is content for the body",
+      "likes": 1
+    },
+    {
+      "id": 4,
+      "author": "Jeff4",
+      "body": "This is content for the body",
+      "likes": 1
+    },
+    {
+      "id": 5,
+      "author": "Jeff5",
+      "body": "This is content for the body",
+      "likes": 1
+    },
+    {
+      "id": 6,
+      "author": "Jeff6",
+      "body": "This is content for the body",
+      "likes": 1
+    },
+    {
+      "id": 7,
+      "author": "Jeff7",
+      "body": "This is content for the body",
+      "likes": 1
+    }
   ]
 }

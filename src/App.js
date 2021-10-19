@@ -18,6 +18,24 @@ function App() {
     });
   };
 
+  const handleLike = (post) => {
+    console.log(post.id, "like connect");
+    axios
+      .put(`http://localhost:8000/post/${post.id}`, {
+        ...post,
+        likes: post.likes + 1,
+      })
+      .then((resp) => {
+        console.log(resp.data, "resp");
+        const newLikePost = resp.data;
+        setPosts(
+          posts.map((post) => {
+            return post.id === newLikePost.id ? newLikePost : posts;
+          })
+        );
+      });
+  };
+
   return (
     <div>
       <Switch>
@@ -25,7 +43,7 @@ function App() {
           exact
           path="/"
           render={(props) => {
-            return <PostContainer posts={posts} />;
+            return <PostContainer posts={posts} handleLike={handleLike} />;
           }}
         />
 
